@@ -20,6 +20,24 @@
 }(window, document, 'ttq');
 </script>
 <!-- End TikTok Pixel -->
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '940128157930141');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=940128157930141&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dyson Airwrap™ — Style, with air.</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
@@ -471,7 +489,7 @@
   </ul>
   <div class="nav-right">
     <a href="#">Support</a>
-    <a href="#" class="nav-bag" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); openCart(event)">Bag (0)</a>
+    <a href="#" class="nav-bag" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); fbq('track','AddToCart',{content_ids:['airwrap-complete'],content_name:'Dyson Airwrap Complete',value:139,currency:'USD'}); openCart(event)">Bag (0)</a>
   </div>
 </nav>
 
@@ -712,7 +730,7 @@
         <li>Free 2-day shipping · 30-day returns</li>
       </ul>
 
-      <a href="#" class="btn-cta" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); openCart(event)">Add to Bag — $139</a>
+      <a href="#" class="btn-cta" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); fbq('track','AddToCart',{content_ids:['airwrap-complete'],content_name:'Dyson Airwrap Complete',value:139,currency:'USD'}); openCart(event)">Add to Bag — $139</a>
 
       <div class="trust-row">
         <span>🔒 Secure Checkout</span>
@@ -950,7 +968,7 @@
       </div>
     </div>
   </div>
-  <button class="sticky-btn" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); openCart(event)">Add to Bag — $139</button>
+  <button class="sticky-btn" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); fbq('track','AddToCart',{content_ids:['airwrap-complete'],content_name:'Dyson Airwrap Complete',value:139,currency:'USD'}); openCart(event)">Add to Bag — $139</button>
 </div>
 
 <!-- CART DRAWER -->
