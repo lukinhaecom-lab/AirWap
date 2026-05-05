@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <!-- TikTok Pixel -->
+<meta charset="UTF-8" />
+<!-- TikTok Pixel -->
 <script>
 !function (w, d, t) {
   w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];
@@ -19,8 +20,6 @@
 }(window, document, 'ttq');
 </script>
 <!-- End TikTok Pixel -->
- 
-<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Dyson Airwrap™ — Style, with air.</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
@@ -472,7 +471,7 @@
   </ul>
   <div class="nav-right">
     <a href="#">Support</a>
-    <a href="#" class="nav-bag" onclick="openCart(event)">Bag (0)</a>
+    <a href="#" class="nav-bag" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); openCart(event)">Bag (0)</a>
   </div>
 </nav>
 
@@ -713,7 +712,7 @@
         <li>Free 2-day shipping · 30-day returns</li>
       </ul>
 
-      <a href="#" class="btn-cta" onclick="openCart(event)">Add to Bag — $139</a>
+      <a href="#" class="btn-cta" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); openCart(event)">Add to Bag — $139</a>
 
       <div class="trust-row">
         <span>🔒 Secure Checkout</span>
@@ -951,7 +950,7 @@
       </div>
     </div>
   </div>
-  <button class="sticky-btn" onclick="openCart(event)">Add to Bag — $139</button>
+  <button class="sticky-btn" onclick="ttq.track('AddToCart',{content_id:'airwrap-complete',content_name:'Dyson Airwrap Complete',price:139,currency:'USD'}); openCart(event)">Add to Bag — $139</button>
 </div>
 
 <!-- CART DRAWER -->
